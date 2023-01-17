@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudi-element
+            > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited { /* quando você já visitou  o site muda de cor*/
+            color:rgb(80, 11, 11)
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active { /*quando você clica muda de cor*/
+            color: yellow;
+        }
+
+        a::before {
+            content: '⇨ ';
+            text-decoration: none;
+            font-weight: normal;
+            color:darkgray;
+        }
+
+        a::after {
+            /*content: ' [link]';*/
+            content: ' ⇦'; /*Pesquisei tabela de simbolos especiais no google*/
+            text-decoration: none;
+            font-weight: normal;
+            color:darkgray;
+        }
+
+        .especial {
+            background-color: rgba(226, 26, 26, 0.822);
+        }
+
+        .especial::before {
+            content: '￫ ';
+        }
+
+        .especial::after {
+            content: ' ￩';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Kedent" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.instagram.com/clara.artcolor/" target="_blank" class="especial">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/clara-pe%C3%A7anha-703593201/" target="_blank">Linkedin</a></li>
+    </ul>
+</body>
+</html>

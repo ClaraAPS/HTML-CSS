@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: burlywood;
+            margin: 0px;
+        }
+
+        header{
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.473);
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 3px;
+
+            /* lateral direita  botton  blur  espalhamento*/
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.473);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px 15px 0px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.473);
+        }
+
+        #assuntos {
+            text-align: center;
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.473);
+        };
+
+        article {
+            background-color: lightgoldenrodyellow;
+            
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.473);
+        }
+        
+
+        article > aside {
+            background-color: lightgray;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.473);
+        }
+
+
+        footer{
+            text-align: center;
+            color: aliceblue;
+            background-color: black;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Esportes Política Tecnologia
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit enim placeat natus, voluptate quidem ullam dolorum earum quam excepturi optio suscipit? Repudiandae ad rerum sapiente dolor sunt nulla eos error!</p>
+                <aside>
+                    <p>Artigo escrito por mim</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por ArtColor
+    </footer>
+</body>
+</html>
