@@ -3,4 +3,4 @@
 
 Aprendendo a criar sites e a gerenciar meus repositórios com Professor Guanabara!
 
-<a hef="https://claraaps.github.io/HTML-CSS/exercicios/desafios/d010/android.html">Executar o desafio 10</a>
+[Executar o desafio 10](https://claraaps.github.io/HTML-CSS/exercicios/desafios/d010/android.html)
