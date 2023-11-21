@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/*Demais midias*/
+
+/*Typical Device Breakpoints
+OBS: esses números são recomendações da w3c na época em que o guanabara fez o video da aula
+
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 786 px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print {
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /*Esse fundo é desnecesário pois não imprime*/
+        }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after { /* Isso também pode ser feto em rodapé, tive a ideia de pegar a data do pc para escrever aqui tipo acessado em xx-xx-xx as xx:xx*/
+        content: 'Essa impressão foi feita através so site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+    
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+
+}
+
+/*Como a configuração para telas pequenas e celular foram feitas no outro css com o mobile first, não sera feita novamente aqui*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    body{
+    background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+        }
+    
+        img#phone {display: none;}
+        img#tablet {display: none;}
+        img#print {display: none;}
+        img#pc {display: block;}
+        img#tv {display: none;}
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+        }
+
+    main {
+        width: 700px;
+    }
+    
+        img#phone {display: none;}
+        img#tablet {display: none;}
+        img#print {display: none;}
+        img#pc {display: none;}
+        img#tv {display: block;}
+}
